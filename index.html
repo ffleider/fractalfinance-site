@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fractal Finance — Fractional CFO y Asesoría Financiera Estratégica | Santiago de Chile</title>
+<meta name="description" content="Fractal Finance ofrece servicios de Fractional CFO y asesoría financiera estratégica para empresas en Chile y el mundo. Optimice sus finanzas, tome decisiones informadas y haga crecer su negocio con soporte experto." />
+<meta name="author" content="Fractal Finance" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%20%20%0A%20%20%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%230b1a12%22%3E%3C%2Frect%3E%0A%20%20%0A%20%20%3Cpath%20d%3D%22M16%2028V8%22%20stroke%3D%22%23e0a458%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%0A%20%20%0A%20%20%3Cpath%20d%3D%22M16%2024%20C13%2022%2011%2020%2010%2017%22%20stroke%3D%22%232d6a4f%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%0A%20%20%3Cpath%20d%3D%22M16%2024%20C19%2022%2021%2020%2022%2017%22%20stroke%3D%22%232d6a4f%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%0A%20%20%0A%20%20%3Cpath%20d%3D%22M16%2019%20C13.5%2017%2012%2015%2011%2012.5%22%20stroke%3D%22%234a8568%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%0A%20%20%3Cpath%20d%3D%22M16%2019%20C18.5%2017%2020%2015%2021%2012.5%22%20stroke%3D%22%234a8568%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%0A%20%20%0A%20%20%3Cpath%20d%3D%22M16%2014%20C14%2012.5%2013%2011%2012.5%209%22%20stroke%3D%22%237ba892%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%0A%20%20%3Cpath%20d%3D%22M16%2014%20C18%2012.5%2019%2011%2019.5%209%22%20stroke%3D%22%237ba892%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%0A%20%20%0A%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%227.5%22%20r%3D%221.6%22%20fill%3D%22%23e0a458%22%3E%3C%2Fcircle%3E%0A%3C%2Fsvg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/rousseau.css?v=2" />
+
+<!-- React + Babel (for the Tweaks island) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#inicio" class="nav-logo">
+    <svg class="mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 22V3" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M12 7c2.4-2.2 4.6-2.6 6.4-2.4M12 7c-2.4-2.2-4.6-2.6-6.4-2.4" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M12 12c2-1.9 3.9-2.3 5.5-2.1M12 12c-2-1.9-3.9-2.3-5.5-2.1" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M12 16.5c1.6-1.5 3.1-1.9 4.4-1.7M12 16.5c-1.6-1.5-3.1-1.9-4.4-1.7" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    Fractal Finance
+  </a>
+  <ul class="nav-links">
+    <li><a href="#vision" data-i18n="nav_vision">Visión</a></li>
+    <li><a href="#fractional-cfo" data-i18n="nav_fcfo">Fractional CFO</a></li>
+    <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+    <li><a href="#casos" data-i18n="nav_cases">Casos</a></li>
+    <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<main class="page">
+
+<!-- HERO -->
+<section id="inicio" class="has-foliage" data-screen-label="Hero" aria-label="Inicio">
+  <div class="sec-foliage" data-foliage="hero"></div>
+  <div class="hero-content">
+    <p class="hero-tag reveal" data-i18n="hero_tag">Fractional CFO · Santiago de Chile</p>
+    <h1 class="hero-title reveal d1" data-i18n="hero_title">Estrategia<br><em>Financiera</em></h1>
+    <p class="hero-subtitle reveal d1" data-i18n="hero_subtitle">Su CFO estratégico cuando lo necesita, sin el costo de uno de tiempo completo.</p>
+    <p class="hero-body reveal d2" data-i18n="hero_body">Acompañamos a Empresarios y Emprendedores en sus decisiones financieras clave, con una visión estratégica de corto, mediano y largo plazo que impulsa el crecimiento y protege lo que han construido.</p>
+    <div class="reveal d3" style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="#contacto" class="btn-leaf">
+        <span data-i18n="hero_cta">Conversemos</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#servicios" class="btn-leaf ghost">
+        <span data-i18n="hero_cta2">Nuestros servicios</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-moon"></div>
+    <canvas id="fern-canvas" aria-label="Helecho fractal de Barnsley"></canvas>
+  </div>
+  <div class="hero-whisper">
+    <p data-i18n="hero_visual_quote">"Como un helecho, toda estructura sólida nace de un patrón que se repite."</p>
+    <span data-i18n="hero_whisper_author">— La filosofía Fractal</span>
+  </div>
+  <div class="scroll-hint">
+    <span class="line"></span>
+    <span data-i18n="scroll_hint">Explorar</span>
+  </div>
+</section>
+
+<!-- VISIÓN -->
+<section id="vision" class="on-paper" data-screen-label="Visión" aria-label="Nuestra Visión">
+  <div class="vision-text reveal">
+    <p class="section-label" data-i18n="vision_label">Nuestra Visión</p>
+    <h2 class="section-title" data-i18n="vision_title">Su socio estratégico en finanzas</h2>
+    <div class="divider"></div>
+    <p data-i18n="vision_p1">Operamos como su <strong>Fractional CFO</strong>: un director financiero de alto nivel disponible para su empresa, sin los costos ni la estructura de un ejecutivo de tiempo completo. Ideal para empresas en crecimiento que necesitan dirección estratégica experta en el momento preciso.</p>
+    <p data-i18n="vision_p2">Nos especializamos en traducir los números en decisiones estratégicas. Desde la planificación financiera hasta el análisis de oportunidades de inversión, alineamos sus finanzas con los objetivos de negocio para que pueda crecer con confianza y solidez.</p>
+    <p data-i18n="vision_p3">Basados en Santiago de Chile, trabajamos con empresas en cualquier parte del mundo, adaptando nuestro modelo de soporte a las necesidades y etapa de desarrollo de cada cliente.</p>
+  </div>
+  <div class="vision-stats reveal d1">
+    <div class="stat-card">
+      <div class="stat-number">01</div>
+      <div class="stat-label" data-i18n="stat1">Estrategia financiera alineada con su negocio</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">02</div>
+      <div class="stat-label" data-i18n="stat2">Decisiones informadas con visión de largo plazo</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">03</div>
+      <div class="stat-label" data-i18n="stat3">Acceso a talento CFO sin costo de tiempo completo</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">∞</div>
+      <div class="stat-label" data-i18n="stat4">Cobertura global desde Santiago de Chile</div>
+    </div>
+  </div>
+</section>
+
+<!-- FRACTIONAL CFO -->
+<section id="fractional-cfo" class="has-foliage" data-screen-label="Fractional CFO" aria-label="Fractional CFO">
+  <div class="sec-foliage" data-foliage="corners"></div>
+  <div class="fcfo-wrap">
+    <div class="reveal">
+      <p class="section-label" data-i18n="fcfo_label">Nuestro modelo</p>
+      <h2 class="section-title" data-i18n="fcfo_title">¿Qué es un<br><em>Fractional CFO?</em></h2>
+      <div class="divider"></div>
+      <p class="lede" data-i18n="fcfo_p1">Un <strong>Fractional CFO</strong> es un director financiero de alto nivel que trabaja con su empresa de forma parcial o por proyecto, entregando la misma profundidad estratégica que un CFO de tiempo completo a una fracción del costo.</p>
+      <p class="lede" data-i18n="fcfo_p2">Es el modelo ideal para empresas en crecimiento, startups y pymes que necesitan dirección financiera experta para escalar, levantar capital, planificar su expansión o enfrentar decisiones complejas — sin comprometer el presupuesto en una posición ejecutiva permanente.</p>
+    </div>
+    <div class="fcfo-cards reveal d1">
+      <div class="fcfo-card">
+        <p class="k" data-i18n="fcfo_card1_title">Para quién</p>
+        <p data-i18n="fcfo_card1_body">Empresas en etapa de crecimiento, startups post-revenue y pymes que necesitan dirección financiera estratégica sin estructura de gran empresa.</p>
+      </div>
+      <div class="fcfo-card">
+        <p class="k" data-i18n="fcfo_card2_title">Cómo funciona</p>
+        <p data-i18n="fcfo_card2_body">Nos integramos a su equipo con la dedicación que su empresa necesita: desde soporte puntual para una decisión crítica hasta acompañamiento continuo mensual.</p>
+      </div>
+      <div class="fcfo-card">
+        <p class="k" data-i18n="fcfo_card3_title">El resultado</p>
+        <p data-i18n="fcfo_card3_body">Decisiones más inteligentes, capital bien estructurado, y una estrategia financiera clara que convierte el crecimiento de su negocio en algo sostenible y medible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" data-screen-label="Servicios" aria-label="Servicios">
+  <div class="servicios-header reveal">
+    <p class="section-label" data-i18n="services_label">Lo que hacemos</p>
+    <h2 class="section-title" data-i18n="services_title">Servicios</h2>
+  </div>
+  <div class="servicios-grid">
+    <div class="servicio-card reveal">
+      <span class="servicio-num">i</span>
+      <svg class="leaf-ico" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 42V14" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 30c3-4 8-5 12-4M24 30c-2.5-3.5-6.5-4.5-10-3.5" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 22c2.5-3.5 6.5-4.5 10-3.5M24 22c-2-3-5.5-3.8-8.5-3" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 14c1.8-2.6 5-3.5 7.5-3" stroke-width="2" stroke-linecap="round"/>
+        <path d="M10 42c4-2 8-3 14-3s10 1 14 3" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+      <h3 data-i18n="s1_title">Análisis</h3>
+      <p data-i18n="s1_body">Transformamos su información financiera y operacional en inteligencia estratégica. Desarrollamos análisis a medida para evaluar la situación actual de su negocio, identificar oportunidades de mejora, y generar recomendaciones concretas que aumenten su rentabilidad y posición competitiva.</p>
+    </div>
+    <div class="servicio-card reveal d1">
+      <span class="servicio-num">ii</span>
+      <svg class="leaf-ico" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 42V20" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 26c-5 0-9-3-10-9 6-1 10 2 10 9Z" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M24 22c5 0 9-3 10-9-6-1-10 2-10 9Z" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="24" cy="12" r="3" class="fill"/>
+      </svg>
+      <h3 data-i18n="s2_title">Proyección</h3>
+      <p data-i18n="s2_body">Construimos modelos de proyección de corto, mediano y largo plazo que le permiten anticipar escenarios, planificar con certeza y tomar decisiones estratégicas informadas. Una visión financiera clara del futuro es la base de cualquier negocio que quiere crecer de forma sostenida.</p>
+    </div>
+    <div class="servicio-card reveal">
+      <span class="servicio-num">iii</span>
+      <svg class="leaf-ico" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6v36" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 18c-4-2-7-6-7-11M24 18c4-2 7-6 7-11" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 30c-6 2-10 0-14-5M24 30c6 2 10 0 14-5" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 42c-5-1-8-4-9-9M24 42c5-1 8-4 9-9" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3 data-i18n="s3_title">Financiamiento</h3>
+      <p data-i18n="s3_body">Diseñamos la estructura de financiamiento óptima para su etapa de desarrollo. Evaluamos alternativas, negociamos condiciones y acompañamos el proceso de obtención de capital, asegurándonos de que su negocio cuente con los recursos necesarios para ejecutar su estrategia de crecimiento.</p>
+    </div>
+    <div class="servicio-card reveal d1">
+      <span class="servicio-num">iv</span>
+      <svg class="leaf-ico" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 42c0-12 6-20 16-24" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="15" r="6" stroke-width="2"/>
+        <path d="M22 30c-4 0-7-2-8-6 5-1 8 1 8 6Z" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="32" cy="15" r="2" class="fill"/>
+      </svg>
+      <h3 data-i18n="s4_title">Inversiones</h3>
+      <p data-i18n="s4_body">Acompañamos a nuestros clientes en sus decisiones de inversión con un enfoque riguroso y personalizado: evaluamos proyectos de inversión, estructuramos portafolios, realizamos due diligence financiero y asesoramos en procesos de fusiones y adquisiciones (M&A), resguardando siempre la rentabilidad y solidez de cada decisión.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS -->
+<section id="casos" class="has-foliage" data-screen-label="Casos" aria-label="Casos">
+  <div class="sec-foliage" data-foliage="corners"></div>
+  <div class="servicios-header reveal">
+    <p class="section-label" data-i18n="cases_label">Experiencia</p>
+    <h2 class="section-title" data-i18n="cases_title">Casos representativos</h2>
+  </div>
+  <div class="casos-grid">
+    <div class="caso-card reveal">
+      <p class="section-label" data-i18n="c1_tag">Fintech · Expansión regional</p>
+      <h3 data-i18n="c1_title">Modelo financiero multi-país</h3>
+      <p data-i18n="c1_body">Desarrollo de modelos financieros independientes para cada filial (Chile, Perú, Colombia y EE.UU.) y un modelo consolidado regional para evaluar performance y apoyar la toma de decisiones estratégicas.</p>
+    </div>
+    <div class="caso-card reveal d1">
+      <p class="section-label" data-i18n="c2_tag">Startup de tecnología · Capital raising</p>
+      <h3 data-i18n="c2_title">Estructuración y levantamiento de capital</h3>
+      <p data-i18n="c2_body">Estructuración de la administración financiera, construcción del modelo financiero base y acompañamiento en el proceso de obtención de capital para financiar la operación y el crecimiento.</p>
+    </div>
+    <div class="caso-card reveal d2">
+      <p class="section-label" data-i18n="c3_tag">Portafolio mixto · Gestión de activos</p>
+      <h3 data-i18n="c3_title">Consolidación de portafolio</h3>
+      <p data-i18n="c3_body">Modelo financiero consolidado que integra activos financieros y activos reales, diseñado para medir el performance del portafolio y fundamentar decisiones de inversión y desinversión.</p>
+    </div>
+    <div class="caso-card reveal">
+      <p class="section-label" data-i18n="c4_tag">Empresa industrial · M&A</p>
+      <h3 data-i18n="c4_title">Proceso de fusión y adquisición</h3>
+      <p data-i18n="c4_body">Asesoría integral en un proceso de M&A, incluyendo modelamiento financiero, due diligence y estructuración de la transacción.</p>
+    </div>
+    <div class="caso-card wide reveal d1">
+      <p class="section-label" data-i18n="c5_tag">Grupo empresarial · Procesos de venta</p>
+      <h3 data-i18n="c5_title">Tres procesos de venta simultáneos</h3>
+      <p data-i18n="c5_body">Asesoría en tres procesos de venta en paralelo: empresa de trading internacional, empresa productiva y activo agrícola. Modelamiento, valorización y acompañamiento en negociación para cada operación.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CITA -->
+<section id="cita" class="has-foliage" data-screen-label="Cita" aria-label="Cita destacada">
+  <div class="sec-foliage" data-foliage="frame"></div>
+  <div class="reveal">
+    <div class="quote-mark">"</div>
+    <p class="quote-text" data-i18n="quote_text">Cuando es obvio que las metas no pueden ser alcanzadas, no modifique las metas, ajuste sus acciones</p>
+    <p class="quote-author" data-i18n="quote_author">— Confucio</p>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" data-screen-label="Contacto" aria-label="Contacto">
+  <div class="contact-info reveal">
+    <p class="section-label" data-i18n="contact_label">Hablemos</p>
+    <h2 class="section-title" data-i18n="contact_title">Contáctenos</h2>
+    <div class="divider"></div>
+    <p class="body" data-i18n="contact_body">Si está interesado o si tiene preguntas, escríbanos. Nos comunicaremos con usted a la brevedad para entender sus necesidades y ver cómo podemos ayudarle.</p>
+    <div class="contact-detail">
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#111;&#64;&#102;&#114;&#97;&#99;&#116;&#97;&#108;&#102;&#105;&#110;&#97;&#110;&#99;&#101;&#46;&#105;&#111;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#111;&#64;&#102;&#114;&#97;&#99;&#116;&#97;&#108;&#102;&#105;&#110;&#97;&#110;&#99;&#101;&#46;&#105;&#111;
+      </a>
+      <span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Av. Las Condes 13.600, Lo Barnechea, Santiago
+      </span>
+    </div>
+  </div>
+  <div class="contact-card reveal d1">
+    <p data-i18n="contact_form_text">Complete nuestro formulario de contacto y nos comunicaremos con usted a la brevedad. El proceso toma menos de dos minutos.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf63s4ENBUz_jQyNMHVpm02iaMRWOXqP5HZXLd0hCoghQrOOA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" class="btn-leaf">
+      <span data-i18n="contact_form_btn">Ir al formulario de contacto</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="has-foliage">
+  <div class="sec-foliage" data-foliage="footer"></div>
+  <span class="footer-logo">Fractal Finance</span>
+  <span class="footer-copy" data-i18n="footer_copy">© Fractal Finance · Santiago de Chile · &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#111;&#64;&#102;&#114;&#97;&#99;&#116;&#97;&#108;&#102;&#105;&#110;&#97;&#110;&#99;&#101;&#46;&#105;&#111;</span>
+  <a href="/terminos" class="footer-terms">Términos y condiciones</a>
+</footer>
+
+<!-- Tweaks island -->
+<div id="tweaks-root"></div>
+
+<script src="js/i18n.js?v=2"></script>
+<script src="js/foliage.js?v=2"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="js/tweaks-app.jsx?v=2"></script>
+
+<style id="__om-edit-overrides"></style>
+</body>
+</html>
